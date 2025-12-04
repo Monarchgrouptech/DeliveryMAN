@@ -423,10 +423,10 @@ class ParcelReturnTimeFee {
   ParcelReturnTimeFee({this.status, this.parcelReturnTime, this.returnTimeType, this.returnFeeForDm});
 
   ParcelReturnTimeFee.fromJson(Map<String, dynamic> json) {
-    status = json['status'];
-    parcelReturnTime = json['parcel_return_time'];
-    returnTimeType = json['return_time_type'];
-    returnFeeForDm = json['return_fee_for_dm'];
+    status = json['status']?.toString();
+    parcelReturnTime = json['parcel_return_time']?.toString();
+    returnTimeType = json['return_time_type']?.toString();
+    returnFeeForDm = json['return_fee_for_dm']?.toString();
   }
 
   Map<String, dynamic> toJson() {
