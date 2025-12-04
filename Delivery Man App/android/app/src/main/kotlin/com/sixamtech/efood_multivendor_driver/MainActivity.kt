@@ -1,4 +1,4 @@
-package com.pegasus.vendor
+package com.pegasus.delivery
 
 import io.flutter.embedding.android.FlutterActivity
 
