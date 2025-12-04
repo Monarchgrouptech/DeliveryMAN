@@ -59,7 +59,7 @@ class ProfileRepository implements ProfileRepositoryInterface {
   Future<void> recordWebSocketLocation(RecordLocationBodyModel recordLocationBody) async {
     recordLocationBody.token = _getUserToken();
 
-    String uri = '${Get.find<SplashController>().configModel!.webSocketUri!}:${Get.find<SplashController>().configModel!.webSocketPort!}/app/6ammart?protocol=7&client=js&version=8.4.0-rc2&flash=false';
+    String uri = '${Get.find<SplashController>().configModel!.webSocketUri!}:${Get.find<SplashController>().configModel!.webSocketPort!}/app/pegasus-delivery?protocol=7&client=js&version=8.4.0-rc2&flash=false';
     final wsUrl = Uri.parse(uri);
     var channel = WebSocketChannel.connect(wsUrl);
     String data = '''{
